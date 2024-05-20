@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "632117762649",
+    "project_id": "flutter-hello-world-78636",
+    "storage_bucket": "flutter-hello-world-78636.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:632117762649:android:ea1130d635a0d5e07caf48",
+        "android_client_info": {
+          "package_name": "com.example.task_tracker"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAeVkDDasj0i8t3OxZCeySV9ofWpCI2czU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
