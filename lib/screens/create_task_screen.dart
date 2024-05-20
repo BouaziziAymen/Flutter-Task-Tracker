@@ -1,6 +1,4 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class CreateTaskScreen extends StatefulWidget {
@@ -28,10 +26,10 @@ class _CreateTaskScreenState extends State<CreateTaskScreen> {
                 }
                 return null;
               },),
-              ElevatedButton(onPressed: (){
+              ElevatedButton(onPressed: () async {
                 if(formKey.currentState!.validate()){
-                  FirebaseFirestore.instance.collection('tasks').add({'task':textEditingController.value.text,'status':false,})
-                  .then((onValue)=>{},onError:(error){} );
+                   FirebaseFirestore.instance.collection('tasks').add({'task':textEditingController.value.text,'status':false,})
+                       .then((_){Navigator.of(context).pop();});
                 }
               }, child: const Text('Create')),
             ],),
